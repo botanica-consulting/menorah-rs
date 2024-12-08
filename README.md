@@ -18,6 +18,8 @@ The rest of the configuration is set in the `.cargo` folder.
 
 # Putting the Pico in bootloader mode
 To put the Pico in bootloader mode, hold down the BOOTSEL button while plugging in the USB cable.
+<img width="389" alt="image" src="https://github.com/user-attachments/assets/4f5b179f-2378-4bcf-9402-324859ec2c88">
+
 
 # Flashing with cargo
 elf2uf2-rs is used to convert the ELF file to a UF2 file and can also automatically flash it to the Pico.
@@ -86,4 +88,6 @@ python -m serial.tools.miniterm
 
 A few tips for using this mode - 
 `Ctrl+D` causes a soft reset, `Ctrl+E` enters paste mode which allows convenient pasting of code into the terminal.
+
+You can also use Thonny IDE if you prefer.
 
