@@ -21,6 +21,12 @@ The rest of the configuration is set in the `.cargo` folder.
 To put the Pico in bootloader mode, hold down the BOOTSEL button while plugging in the USB cable.
 <img width="389" alt="image" src="https://github.com/user-attachments/assets/4f5b179f-2378-4bcf-9402-324859ec2c88">
 
+An RP2 Boot device should appear, as well as a disk drive mount named `RPI-RP2`.
+```bash
+lsusb # check for RP2 Boot device on Linux
+ioreg -p IOUSB # check for RP2 Boot device on macOS
+Get-PnpDevice -Class USB # check for RP2 Boot device on Windows
+```
 
 # Flashing with cargo
 elf2uf2-rs is used to convert the ELF file to a UF2 file and can also automatically flash it to the Pico.
