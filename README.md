@@ -1,8 +1,9 @@
 # Environment setup instructions
-Install Rust using rustup:
-```bash
+Install Rust + Cargo using rustup
+```bash 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+Or download the [Windows installer](https://win.rustup.rs/x86_64).
 
 Install the thumbv6m-none-eabi target:
 ```bash
