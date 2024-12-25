@@ -77,9 +77,10 @@ make
 
 Once built, you can flash the UF2 file to the Pico:
 ```bash
+# back in the menorah-rs directory
 elf2uf2-rs target/thumbv6m-none-eabi/debug/menorah-rs out.uf2
-./picotool load out.uf2
-./picotool reboot # or reboot manually
+sudo ./picotool/build/picotool load out.uf2
+sudo ./picotool/build/picotool reboot # and reboot manually
 ```
 
 # MicroPython
